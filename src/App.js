@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Home from "./pages/Home";
-import Container from "@material-ui/core/Container"
+import Breadcrumb from "./components/Breadcrumb";
+import {Container} from "@material-ui/core/"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
   return (
     <div>
       <Container maxWidth="lg">
+        <Breadcrumb/>
         <Home/>
       </Container>
     </div>
