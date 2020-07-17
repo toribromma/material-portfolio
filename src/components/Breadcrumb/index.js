@@ -2,26 +2,27 @@ import React from "react";
 import {Breadcrumbs, Link} from "@material-ui/core"
 import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles((theme) => ({
+    root: {
+      '⋆ & > * + *': {
+        marginTop: theme.spacing(3),
+      }
+    },
+    breadcrumb: {
+        fontSize: "20px",
+        marginTop: "100px",
+        marginBottom: "50px"
+
+    },
+    link: {
+        padding: "10px",
+        fontWeight: "bolder",
+        textAlign: "center"
+
+    }
+  }));
+
 function Breadcrumb() {
-
-    const useStyles = makeStyles((theme) => ({
-        root: {
-          '⋆ & > * + *': {
-            marginTop: theme.spacing(3),
-          }
-        },
-        breadcrumb: {
-            fontSize: "20px",
-            marginTop: "100px",
-            textAlign: "center"
-
-        },
-        link: {
-            padding: "10px",
-            fontWeight: "bolder",
- 
-        }
-      }));
 
     function handleClick(event) {
         event.preventDefault();

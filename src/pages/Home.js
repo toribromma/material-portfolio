@@ -1,14 +1,53 @@
 import React from "react";
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    color: theme.palette.text.primary
+  },
+}));
 
 
 function Home() {
 
+  const classes = useStyles();
+  
   return (
     <div>
-      <br></br>
       <hr></hr>
-      <p>If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough, the next logical step is to find a random paragraph. We created the Random Paragraph Generator with you in mind. The process is quite simple. Choose the number of random paragraphs you'd like to see and click the button. Your chosen number of paragraphs will instantly appear.
-      While it may not be obvious to everyone, there are a number of reasons creating random paragraphs can be useful. A few examples of how some people use this generator are listed in the following paragraphs.</p>
+      <Grid
+      container
+      direction="row"
+      justify="center"
+      alignItems="center"
+      >
+        <Grid item xs={12} sm={8}>
+          <Paper 
+          className={classes.paper}
+          elevation={0}
+          >
+            <h2>
+              A nerdy dude with a passion, TRULY, a renaissance man!
+            </h2>
+            <p>
+              I enjoy the outdoors, picnicing, playing guitar, and most of all: coding!
+            </p>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Paper className={classes.paper}>
+
+            </Paper>
+        
+
+        </Grid>
+      
+      </Grid>
     </div>
   );
 }

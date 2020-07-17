@@ -9,7 +9,7 @@ function App() {
   
   return (
     <div>
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Header/>
         <Breadcrumb/>
         <Home/>
