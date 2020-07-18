@@ -2,7 +2,9 @@ import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import profile from "../images/profile1.jpg"
+import profile from "../images/profile1.jpg";
+import Avatar from "@material-ui/core/Avatar";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -11,6 +13,11 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     color: theme.palette.text.primary
   },
+  avatar: {
+    width: "200px",
+    height: "200px"
+
+  }
 }));
 
 
@@ -42,7 +49,7 @@ function Home() {
         </Grid>
         <Grid item xs={12} sm={3}>
           <Paper elevation={0} className={classes.paper}>
-            <img width={325} height={300} src={profile}/>
+            <Avatar className={classes.avatar} src={profile}/>
             <h4>Contact Info:</h4>
             </Paper>
         
