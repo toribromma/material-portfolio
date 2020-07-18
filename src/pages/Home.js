@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import profile from "../images/profile1.jpg"
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -18,7 +19,7 @@ function Home() {
   const classes = useStyles();
   
   return (
-    <div>
+    <div className={classes.root}>
       <hr></hr>
       <Grid
       container
@@ -26,7 +27,7 @@ function Home() {
       justify="center"
       alignItems="center"
       >
-        <Grid item xs={12} sm={8}>
+        <Grid item xs={12} sm={9}>
           <Paper 
           className={classes.paper}
           elevation={0}
@@ -39,9 +40,10 @@ function Home() {
             </p>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={4}>
-          <Paper className={classes.paper}>
-
+        <Grid item xs={12} sm={3}>
+          <Paper elevation={0} className={classes.paper}>
+            <img width={325} height={300} src={profile}/>
+            <h4>Contact Info:</h4>
             </Paper>
         
 
