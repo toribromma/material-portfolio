@@ -34,10 +34,10 @@ function Breadcrumb() {
     return (
         <div className={classes.root}>
             <Breadcrumbs className={classes.breadcrumb} separator=" " aria-label="breadcrumb">
-            <Link className={classes.link} color="inherit" href="/" onClick={handleClick}>
+            <Link className={classes.link} color="inherit" href="/">
             About
             </Link >
-            <Link className={classes.link} color="inherit" href="/" onClick={handleClick}>
+            <Link className={classes.link} color="inherit" href="/projects" >
             Projects
             </Link>
             <Link className={classes.link} color="inherit" href="/" onClick={handleClick}>

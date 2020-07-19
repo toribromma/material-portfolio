@@ -51,6 +51,14 @@ function Home() {
           <Paper elevation={0} className={classes.paper}>
             <Avatar className={classes.avatar} src={profile}/>
             <h4>Contact Info:</h4>
+            <ul>
+              <li>
+                Tele: 1 (714)-702-0401
+              </li>
+              <li>
+                
+              </li>
+            </ul>
             </Paper>
         
 
