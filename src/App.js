@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Projects from "./pages/Projects";
 import Detail from "./pages/Detail";
 import Skills from "./pages/Skills";
-
+import Footer from "./components/Footer"
 function App() {
 
   
@@ -30,7 +30,7 @@ function App() {
                 <Projects />
               </Route>
             </Switch>
-
+          <Footer/>
         </Container>
       </Router>
   );

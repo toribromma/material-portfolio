@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import profile from "../images/profile1.jpg";
 import Avatar from "@material-ui/core/Avatar";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,7 +29,7 @@ function Home() {
   return (
     <div className={classes.root}>
       <hr></hr>
-      <Grid align-content-xs-center
+      <Grid 
       container
       direction="row"
       justify="center"
@@ -45,6 +46,9 @@ function Home() {
             <p>
               I enjoy the outdoors, picnicing, playing guitar, and most of all: coding!
             </p>
+            <Button>
+              Email me
+            </Button>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={3}>
@@ -60,10 +64,7 @@ function Home() {
               </li>
             </ul>
             </Paper>
-        
-
         </Grid>
-      
       </Grid>
     </div>
   );

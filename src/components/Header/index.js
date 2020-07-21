@@ -11,9 +11,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 function Header() {
-
       const classes = useStyles();
-
     return (
             <header className={classes.name}>
                 <h1>tori bromma</h1>
