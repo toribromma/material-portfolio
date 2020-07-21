@@ -3,15 +3,17 @@ import { Link, useParams } from "react-router-dom";
 import tileData from "../components/Project/tileData"
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/button';
 
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
     },
     paper: {
-      padding: theme.spacing(2),
+      padding: theme.spacing(1),
       textAlign: 'center',
-      color: theme.palette.text.secondary,
+      color: theme.palette.text.primary,
     },
     img: {
         margin: 'auto',
@@ -42,16 +44,20 @@ return (
         spacing={3}
         alignItems="center">
             <Grid item xs={12}>
-                <h2>{project.title}</h2>
+               <Paper elevation={0} className={classes.paper}><h2>{project.title}</h2></Paper> 
             </Grid>
             <Grid item xs={12}>
-                <p>{project.description}</p>
+            <Paper elevation={0} className={classes.paper}><p>{project.description}</p></Paper>
             </Grid>
-            <Grid item xs={12}>
+            <Paper elevation={3} className={classes.paper}><Grid item xs={12}>
                 <img className={classes.img} src={project.img}/>
-            </Grid>
+            </Grid></Paper>
             <Grid item xs={12}>
+            <Paper elevation={0} className={classes.paper}>
+                <Button>
                 <Link to="/projects">← Back to Projects</Link>
+                </Button>
+                </Paper>
             </Grid>
         </Grid>
      </div>
