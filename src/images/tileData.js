@@ -1,6 +1,5 @@
-import image from "../../images/airbnb3.png";
-import image2 from "../../images/societe.png";
-import image3 from "../../images/wmp.png";
+import image from "../../images/airbnb3.png"
+
 
 const tileData = [
     {
@@ -25,7 +24,7 @@ const tileData = [
         img: image3,
         title: "Weekly Meal Planner",
         _id: "3",
-        description: "Connect recipes with your google calendar!",
+        description: "Recipe Calendar",
         technologies: "HTML, CSS, UIKit, JS, and Google Calendar API",
         githubLink: "www.google.com",
         deployedLink: "www.youtube.com"

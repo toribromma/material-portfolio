@@ -17,8 +17,10 @@ function Detail(props) {
     
 return (
     <div>
-        <h1></h1>
         <h2>{project.title}</h2>
+        <p>{project.description}</p>
+        <img src={project.img}/>
+        <br></br>
         <Link to="/projects">← Back to Projects</Link>
      </div>
 

@@ -34,7 +34,7 @@ function Projects() {
         <div>
             <hr></hr>
              <div className={classes.root}>
-                <GridList cellHeight={600} spacing={3} cols={1} className={classes.gridList}>
+                <GridList cellHeight={600} spacing={3} cols={2} className={classes.gridList}>
                     {/* <GridListTile key="Subheader" cols={2} rows={1} style={{ height: 'auto' }}>
                     <ListSubheader component="div">Projects</ListSubheader>
                     </GridListTile> */}
