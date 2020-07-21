@@ -1,8 +1,13 @@
 import React from "react";
+import TitlebarGridList from "../components/Project"
 
 function Projects() {
     return (
-        <div>Hello</div>
+        
+        <div>
+            <hr></hr>
+            <TitlebarGridList/>
+        </div>
     );
 }
 
