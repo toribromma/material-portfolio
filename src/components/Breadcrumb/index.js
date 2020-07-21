@@ -11,13 +11,14 @@ const useStyles = makeStyles((theme) => ({
     breadcrumb: {
         fontSize: "20px",
         marginTop: "100px",
-        marginBottom: "50px"
+        marginBottom: "50px",
+
 
     },
     link: {
-        padding: "10px",
+        padding: "20px",
         fontWeight: "bolder",
-        textAlign: "center"
+        textAlign: "center",
 
     }
   }));

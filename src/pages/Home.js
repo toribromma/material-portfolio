@@ -28,7 +28,7 @@ function Home() {
   return (
     <div className={classes.root}>
       <hr></hr>
-      <Grid
+      <Grid align-content-xs-center
       container
       direction="row"
       justify="center"
