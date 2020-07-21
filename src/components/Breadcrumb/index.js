@@ -19,6 +19,8 @@ const useStyles = makeStyles((theme) => ({
         padding: "20px",
         fontWeight: "bolder",
         textAlign: "center",
+        fontFamily: 'Pacifico',
+        color: "black"
 
     }
   }));
