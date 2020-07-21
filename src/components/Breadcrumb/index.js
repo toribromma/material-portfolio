@@ -40,7 +40,7 @@ function Breadcrumb() {
             <Link className={classes.link} color="inherit" href="/projects" >
             Projects
             </Link>
-            <Link className={classes.link} color="inherit" href="/" onClick={handleClick}>
+            <Link className={classes.link} color="inherit" href="/skills">
             Skills
             </Link>
             </Breadcrumbs>

@@ -5,26 +5,34 @@ import Header from "./components/Header";
 import {Container} from "@material-ui/core/"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Projects from "./pages/Projects";
+import Detail from "./pages/Detail";
+import Skills from "./pages/Skills";
+
 function App() {
 
   
   return (
-    <div>
       <Router>
         <Container maxWidth="lg">
           <Header/>
           <Breadcrumb/>
-            <Switch>
-              <Route exact path={["/"]}>
+          <Switch>  
+          <Route exact path="/">
                 <Home/>
+            </Route>
+            <Route exact path="/skills">
+                <Skills />
               </Route>
-              <Route>
-                <Projects exact path="/projects"/>
+              <Route exact path="/projects/:id">
+                <Detail />
+              </Route>
+              <Route exact path="/projects">
+                <Projects />
               </Route>
             </Switch>
+
         </Container>
       </Router>
-    </div>
   );
 }
 
