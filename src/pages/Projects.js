@@ -19,21 +19,24 @@ const useStyles = makeStyles((theme) => ({
       marginTop: "100px"
     },
     gridList: {
-      width: 1000 ,
-      height: 850
+      width: 500 ,
+      height: 400
     },
     icon: {
       color: 'rgba(255, 255, 255, 0.54)',
     },
     bar: {
-        backgroundColor: "black"
+        backgroundColor: "black",
     },
     img: {
         // border: "solid 2px black"
+        // height: 400,
+        // width: 500
     },
     tile: {
         marginBottom: 20,
-        borderBottom: "black solid 5px"
+        borderBottom: "black solid 5px",
+        
     }
   }));
 
@@ -44,7 +47,7 @@ function Projects() {
         <div>
             <hr></hr>
              <div className={classes.root}>
-                <GridList cellHeight={600} spacing={3} cols={1} className={classes.gridList}>
+                <GridList cellHeight={600} spacing={1} cols={2} className={classes.gridList}>
                     {/* <GridListTile key="Subheader" cols={1} rows={1} style={{ height: 'auto' }}>
                     <ListSubheader component="div">Projects</ListSubheader>
                     </GridListTile> */}

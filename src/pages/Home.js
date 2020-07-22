@@ -46,7 +46,7 @@ function Home() {
             <p>
               I enjoy the outdoors, picnicing, playing guitar, and most of all: coding!
             </p>
-            <Button>
+            <Button target="_blank" href="mailto:toribromma@gmail.com">
               Email me
             </Button>
           </Paper>
