@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/material-portfolio/static/css/main.5a42a4c7.chunk.css",
-    "main.js": "/material-portfolio/static/js/main.305524e6.chunk.js",
-    "main.js.map": "/material-portfolio/static/js/main.305524e6.chunk.js.map",
+    "main.js": "/material-portfolio/static/js/main.acd7cd7e.chunk.js",
+    "main.js.map": "/material-portfolio/static/js/main.acd7cd7e.chunk.js.map",
     "runtime-main.js": "/material-portfolio/static/js/runtime-main.cd17476b.js",
     "runtime-main.js.map": "/material-portfolio/static/js/runtime-main.cd17476b.js.map",
-    "static/js/2.2162bc7c.chunk.js": "/material-portfolio/static/js/2.2162bc7c.chunk.js",
-    "static/js/2.2162bc7c.chunk.js.map": "/material-portfolio/static/js/2.2162bc7c.chunk.js.map",
+    "static/js/2.5bfae3d8.chunk.js": "/material-portfolio/static/js/2.5bfae3d8.chunk.js",
+    "static/js/2.5bfae3d8.chunk.js.map": "/material-portfolio/static/js/2.5bfae3d8.chunk.js.map",
     "index.html": "/material-portfolio/index.html",
-    "precache-manifest.68ad11be912fbf553e70504fcac6448f.js": "/material-portfolio/precache-manifest.68ad11be912fbf553e70504fcac6448f.js",
+    "precache-manifest.a53d447a1a77299cfb7da853fe7a2b80.js": "/material-portfolio/precache-manifest.a53d447a1a77299cfb7da853fe7a2b80.js",
     "service-worker.js": "/material-portfolio/service-worker.js",
     "static/css/main.5a42a4c7.chunk.css.map": "/material-portfolio/static/css/main.5a42a4c7.chunk.css.map",
-    "static/js/2.2162bc7c.chunk.js.LICENSE.txt": "/material-portfolio/static/js/2.2162bc7c.chunk.js.LICENSE.txt",
-    "static/media/airbnb3.png": "/material-portfolio/static/media/airbnb3.7db8058a.png",
+    "static/js/2.5bfae3d8.chunk.js.LICENSE.txt": "/material-portfolio/static/js/2.5bfae3d8.chunk.js.LICENSE.txt",
+    "static/media/airbnb3.png": "/material-portfolio/static/media/airbnb3.4e129a93.png",
     "static/media/profile1.jpg": "/material-portfolio/static/media/profile1.60af899a.jpg",
-    "static/media/societe.png": "/material-portfolio/static/media/societe.071439f2.png",
-    "static/media/wmp.png": "/material-portfolio/static/media/wmp.b61e0bf9.png"
+    "static/media/societe.png": "/material-portfolio/static/media/societe.ce7708d5.png",
+    "static/media/wmp.png": "/material-portfolio/static/media/wmp.0e25625b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cd17476b.js",
-    "static/js/2.2162bc7c.chunk.js",
+    "static/js/2.5bfae3d8.chunk.js",
     "static/css/main.5a42a4c7.chunk.css",
-    "static/js/main.305524e6.chunk.js"
+    "static/js/main.acd7cd7e.chunk.js"
   ]
 }
