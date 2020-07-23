@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Breadcrumb from "./components/Breadcrumb";
 import Header from "./components/Header";
 import {Container, Box} from "@material-ui/core/"
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Projects from "./pages/Projects";
 import Detail from "./pages/Detail";
 import Skills from "./pages/Skills";
@@ -13,9 +13,9 @@ function App() {
 
   
   return (
-      <Router 
+      <HashRouter 
       forceRefresh={true}
-      basename="/material-portfolio">
+      basename={process.env.PUBLIC_URL}>
         <Container maxWidth="lg">
           <Header/>
           <Box component="span">
@@ -37,7 +37,7 @@ function App() {
             </Switch>
           <Footer/>
         </Container>
-      </Router>
+      </HashRouter>
   );
 }
 
