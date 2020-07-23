@@ -20,16 +20,16 @@ function App() {
           <Breadcrumb/>
           </Box>
           <Switch>  
-          <Route exact path="/material-portfolio/">
+          <Route exact path={process.env.PUBLIC_URL + "/"}>
                 <Home/>
             </Route>
-            <Route exact path="/material-portfolio/skills">
+            <Route exact path={process.env.PUBLIC_URL + "/skills"}>
                 <Skills />
               </Route>
-              <Route exact path="/material-portfolio/projects/:id">
+              <Route exact path={process.env.PUBLIC_URL + "/projects/:id"}>
                 <Detail />
               </Route>
-              <Route exact path="/material-portfolio/projects">
+              <Route exact path={process.env.PUBLIC_URL + "/projects"}>
                 <Projects />
               </Route>
             </Switch>
