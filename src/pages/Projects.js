@@ -5,6 +5,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
+import {Link} from "react-router-dom";
 import InfoIcon from '@material-ui/icons/Info';
 import tileData from '../components/Project/tileData';
 
@@ -59,9 +60,9 @@ function Projects() {
                         title={tile.title}
                         subtitle={<span>{tile.description}</span>}
                         actionIcon={
-                        <IconButton href={"/projects/" + tile._id} aria-label={`info about ${tile.title}`} className={classes.icon}>
+                        <Link to={"/projects/" + tile._id} aria-label={`info about ${tile.title}`} className={classes.icon}>
                         <InfoIcon />
-                        </IconButton>
+                        </Link>
                         }
                         />
                     </GridListTile>
