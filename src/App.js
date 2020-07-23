@@ -15,7 +15,7 @@ function App() {
   return (
       <Router 
       forceRefresh={true}
-      basename="/material-portfolio">
+      basename={process.env.PUBLIC_URL}>
         <Container maxWidth="lg">
           <Header/>
           <Box component="span">
