@@ -59,7 +59,7 @@ function Projects() {
                         title={tile.title}
                         subtitle={<span>{tile.description}</span>}
                         actionIcon={
-                        <IconButton href={"/projects/" + tile._id} aria-label={`info about ${tile.title}`} className={classes.icon}>
+                        <IconButton href={"/material-portfolio/projects/" + tile._id} aria-label={`info about ${tile.title}`} className={classes.icon}>
                         <InfoIcon />
                         </IconButton>
                         }
