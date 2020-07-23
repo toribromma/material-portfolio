@@ -15,23 +15,23 @@ function App() {
   return (
       <Router 
       forceRefresh={true}
-      basename={process.env.PUBLIC_URL}>
+      basename="/material-portfolio">
         <Container maxWidth="lg">
           <Header/>
           <Box component="span">
           <Breadcrumb/>
           </Box>
           <Switch>  
-          <Route exact path="/">
+          <Route exact path={process.env.PUBLIC_URL + "/"}>
                 <Home/>
             </Route>
-            <Route exact path="/skills/">
+            <Route exact path={process.env.PUBLIC_URL + "/skills/"}>
                 <Skills />
               </Route>
-              <Route exact path="/projects/:id">
+              <Route exact path={process.env.PUBLIC_URL + "/projects/:id"}>
                 <Detail />
               </Route>
-              <Route exact path="/projects/">
+              <Route exact path={process.env.PUBLIC_URL + "/projects/"}>
                 <Projects />
               </Route>
             </Switch>
