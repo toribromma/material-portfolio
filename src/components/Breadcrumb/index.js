@@ -37,13 +37,13 @@ function Breadcrumb() {
           <Grid container>
             <Grid item xs={4}/>
             <Breadcrumbs className={classes.breadcrumb} separator="|" aria-label="breadcrumb">
-            <Link className={classes.link} color="inherit" to="/material-portfolio/#/">
+            <Link className={classes.link} color="inherit" href="/material-portfolio/#/">
             About
             </Link >
-            <Link className={classes.link} color="inherit" to="/material-portfolio/#/projects" >
+            <Link className={classes.link} color="inherit" href="/material-portfolio/#/projects" >
             Projects
             </Link>
-            <Link className={classes.link} color="inherit" to="/material-portfolio/#/skills">
+            <Link className={classes.link} color="inherit" href="/material-portfolio/#/skills">
             Skills
             </Link>
             </Breadcrumbs>
