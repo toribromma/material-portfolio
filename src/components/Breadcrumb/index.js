@@ -1,7 +1,6 @@
 import React from "react";
-import {Breadcrumbs, Grid} from "@material-ui/core"
+import {Breadcrumbs, Link, Grid} from "@material-ui/core"
 import { makeStyles } from '@material-ui/core/styles';
-import {Link} from "react-router-dom"
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -38,13 +37,13 @@ function Breadcrumb() {
           <Grid container>
             <Grid item xs={4}/>
             <Breadcrumbs className={classes.breadcrumb} separator="|" aria-label="breadcrumb">
-            <Link className={classes.link} color="inherit" to="/">
+            <Link className={classes.link} color="inherit" to="/material-portfolio/#/">
             About
             </Link >
-            <Link className={classes.link} color="inherit" to="/projects" >
+            <Link className={classes.link} color="inherit" to="/material-portfolio/#/projects" >
             Projects
             </Link>
-            <Link className={classes.link} color="inherit" to="/skills">
+            <Link className={classes.link} color="inherit" to="/material-portfolio/#/skills">
             Skills
             </Link>
             </Breadcrumbs>
