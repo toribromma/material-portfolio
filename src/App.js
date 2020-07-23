@@ -13,7 +13,7 @@ function App() {
 
   
   return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename="/material-portfolio">
         <Container maxWidth="lg">
           <Header/>
           <Box component="span">
@@ -23,13 +23,13 @@ function App() {
           <Route exact path="/">
                 <Home/>
             </Route>
-            <Route exact path="/skills">
+            <Route exact path="/skills/">
                 <Skills />
               </Route>
               <Route exact path="/projects/:id">
                 <Detail />
               </Route>
-              <Route exact path="/projects">
+              <Route exact path="/projects/">
                 <Projects />
               </Route>
             </Switch>
