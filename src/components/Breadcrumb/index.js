@@ -6,21 +6,19 @@ const useStyles = makeStyles((theme) => ({
     root: {
       '⋆ & > * + *': {
         marginTop: theme.spacing(3),
-      }
+      },
     },
     breadcrumb: {
         fontSize: "20px",
         marginTop: "100px",
         marginBottom: "50px",
-
-
     },
     link: {
         padding: "20px",
         fontWeight: "bolder",
         textAlign: "center",
         fontFamily: 'Pacifico',
-        color: "black"
+        color: "black",
 
     }
   }));
