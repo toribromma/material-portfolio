@@ -13,7 +13,7 @@ function App() {
 
   
   return (
-      <Router 
+      <BrowserRouter 
       forceRefresh={true}
       basename="/material-portfolio">
         <Container maxWidth="lg">
@@ -37,7 +37,7 @@ function App() {
             </Switch>
           <Footer/>
         </Container>
-      </Router>
+      </BrowserRouter>
   );
 }
 
