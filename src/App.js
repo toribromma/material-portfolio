@@ -13,7 +13,9 @@ function App() {
 
   
   return (
-      <Router basename="/material-portfolio">
+      <Router 
+      forceRefresh={true}
+      basename="/material-portfolio">
         <Container maxWidth="lg">
           <Header/>
           <Box component="span">
