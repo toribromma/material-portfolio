@@ -18,8 +18,8 @@ const tileData = [
         _id: "2",
         description: "Youtube, Spotify, and Chat ALL-IN-ONE!",
         technologies: "React.js, Redux, Thunk, Express, Node, MongoDB, Passport, Bcrypt, JWToken",
-        githubLink: "www.google.com",
-        deployedLink: "www.youtube.com"
+        githubLink: "https://github.com/BrianHdz/Project-3",
+        deployedLink: "https://polar-brushlands-16053.herokuapp.com/"
     },
     {
         img: image3,
@@ -27,8 +27,8 @@ const tileData = [
         _id: "3",
         description: "Connect recipes with your google calendar!",
         technologies: "HTML, CSS, UIKit, JS, and Google Calendar API",
-        githubLink: "www.google.com",
-        deployedLink: "www.youtube.com"
+        githubLink: "https://github.com/hollyisaredhead/Weekly-meal-planner",
+        deployedLink: "https://hollyisaredhead.github.io/Weekly-meal-planner/"
     },
     
 ]
