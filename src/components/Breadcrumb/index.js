@@ -1,5 +1,5 @@
 import React from "react";
-import {Breadcrumbs, Link} from "@material-ui/core"
+import {Breadcrumbs, Link, Grid} from "@material-ui/core"
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -34,6 +34,8 @@ function Breadcrumb() {
 
     return (
         <div className={classes.root}>
+          <Grid container>
+            <Grid item xs={4}/>
             <Breadcrumbs className={classes.breadcrumb} separator="|" aria-label="breadcrumb">
             <Link className={classes.link} color="inherit" href="/">
             About
@@ -45,6 +47,8 @@ function Breadcrumb() {
             Skills
             </Link>
             </Breadcrumbs>
+            <Grid item xs={4}/>
+            </Grid>
         </div>
     )
 }
