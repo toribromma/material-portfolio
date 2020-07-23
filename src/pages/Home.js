@@ -18,8 +18,16 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     width: "200px",
     height: "200px"
-
-  }
+  },
+  button: {
+    background: 'linear-gradient(45deg, #9AAB89 30%, #FF8E53 90%)',
+    borderRadius: 3,
+    border: 0,
+    color: 'white',
+    height: 38,
+    padding: '0 20px',
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+  },
 }));
 
 
@@ -29,7 +37,7 @@ function Home() {
   
   return (
     <div className={classes.root}>
-      <hr></hr>
+      {/* <hr></hr> */}
       <Grid 
       container
       direction="row"
@@ -39,27 +47,28 @@ function Home() {
         <Grid item xs={12} sm={9}>
           <Paper 
           className={classes.paper}
-          elevation={0}
+          elevation={1}
+          spacing={4}
           >
             <h2>
-              A nerdy dude with a passion, TRULY, a renaissance man!
+              <i>Welcome to my Page!</i>
             </h2>
             <p>
               I enjoy the outdoors, basketball, playing guitar, and most of all: <b><i>coding</i></b>!
             </p>
             <p>
-              <b>Full Stack Web Developer</b> with a background in Political Science and Social Services. Dedicated to
+              <b>Full Stack (MERN) Web Developer</b> with a background in Political Science and Social Services. Dedicated to
               developing new skills, honing current skills, producing effective, creative app ideas, and solving complicated
               problems. Known for being clever, having sound ideas and follow through.
             </p>
             <p>Focused on <b>Object-Oriented Programming</b> and <b>agile development</b>. My goals are to become more advanced in React and become better at whiteboarding.</p>
-            <Button target="_blank" href="mailto:toribromma@gmail.com">
+            <Button className={classes.button} target="_blank" href="mailto:toribromma@gmail.com">
               Email me
             </Button>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={3}>
-          <Paper elevation={0} className={classes.paper}>
+          <Paper elevation={1} className={classes.paper}>
             <Avatar className={classes.avatar} src={profile}/>
             <h4>Contact Info:</h4>
             <ul>

@@ -30,13 +30,13 @@ function Skills() {
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>
                         <i className="fab fa-html5 fa-5x"></i>
-                        <div className={classes.text}>HTML</div>
+                        <div className={classes.text}>HTML5</div>
                     </Paper>
                 </Grid>
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>
                         <i className="fab fa-css3-alt fa-5x"></i>
-                        <div className={classes.text}>CSS, Bootstrap, UIKit, Material UI</div>
+                        <div className={classes.text}>CSS3</div>
                     </Paper>
                 </Grid>
                 <Grid item xs={6}>

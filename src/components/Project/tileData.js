@@ -9,8 +9,8 @@ const tileData = [
         _id: "1",
         description: "Mock air bnb website that allows user to search for air bnb rentals anywhere in the United States.",
         technologies: "React.js, Redux, Thunk, Express, Node, MongoDB, Passport, Bcrypt, JWToken",
-        githubLink: "www.google.com",
-        deployedLink: "www.youtube.com",
+        githubLink: "https://github.com/toribromma/airbnb-bargain",
+        deployedLink: "https://warm-scrubland-68417.herokuapp.com/",
     },
     {
         img: image2,

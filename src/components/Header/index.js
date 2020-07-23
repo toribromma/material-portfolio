@@ -11,11 +11,14 @@ const useStyles = makeStyles((theme) => ({
     },
     heading: {
       fontFamily: "Pacifico",
+      letterSpacing: "4px",
+      
     },
     paper: {
-      backgroundColor: "#D0D4BA",
-      borderRadius: "10px",
-      padding: 18
+      // backgroundColor: "#D0D4BA",
+      // borderRadius: "10px",
+      // padding: 18
+      // background: "repeating-radial-gradient(circle, #9AAB89, #9AAB89, 10px, #D0D4BA 10px, #D0D4BA 20px)"
     }
 
   }));
@@ -31,7 +34,7 @@ function Header() {
 
                   </Grid>
                   <Grid item xs={6}>
-                  <Paper className={classes.paper}>
+                  <Paper elevation={0} className={classes.paper}>
                   <h1
               className={classes.heading}
               >Tori Bromma</h1>

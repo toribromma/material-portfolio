@@ -16,10 +16,12 @@ const useStyles = makeStyles((theme) => ({
     },
     link: {
         padding: "20px",
-        fontWeight: "bolder",
         textAlign: "center",
         fontFamily: 'Merriweather',
         color: "black",
+        textDecoration: "none",
+        fontWeight: "bolder",
+
 
     }
   }));
