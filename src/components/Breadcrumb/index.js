@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
         padding: "20px",
         fontWeight: "bolder",
         textAlign: "center",
-        fontFamily: 'Pacifico',
+        fontFamily: 'Merriweather',
         color: "black",
 
     }
@@ -34,7 +34,7 @@ function Breadcrumb() {
 
     return (
         <div className={classes.root}>
-            <Breadcrumbs className={classes.breadcrumb} separator=" " aria-label="breadcrumb">
+            <Breadcrumbs className={classes.breadcrumb} separator="|" aria-label="breadcrumb">
             <Link className={classes.link} color="inherit" href="/">
             About
             </Link >

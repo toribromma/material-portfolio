@@ -10,8 +10,14 @@ const useStyles = makeStyles((theme) => ({
     paper: {
       padding: theme.spacing(2),
       textAlign: 'center',
-      color: theme.palette.text.secondary,
+      color: theme.palette.text.primary,
+      fontFamily: "Roboto",
     },
+    text: {
+        fontSize: "20px",
+        marginTop: 10,
+        fontWeight: "300"
+    }
   }));
   
 
@@ -24,37 +30,37 @@ function Skills() {
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>
                         <i className="fab fa-html5 fa-5x"></i>
-                        <div className="language">HTML</div>
+                        <div className={classes.text}>HTML</div>
                     </Paper>
                 </Grid>
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>
                         <i className="fab fa-css3-alt fa-5x"></i>
-                        <div className="language">CSS, Bootstrap, UIKit, Material UI</div>
+                        <div className={classes.text}>CSS, Bootstrap, UIKit, Material UI</div>
                     </Paper>
                 </Grid>
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>
                     <i className="fab fa-react fa-5x fa-spin"></i>
-                    <div className="language">React, Redux, Hooks</div>
+                    <div className={classes.text}>React, Redux, Hooks</div>
                     </Paper>
                 </Grid>
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>
                         <i className="fab fa-html5 fa-5x"></i>
-                        <div className="language">HTML</div>
+                        <div className={classes.text}>HTML</div>
                     </Paper>
                 </Grid>
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>
                     <i className="fab fa-node-js fa-5x"></i>
-                    <div className="language">Node and Express</div>
+                    <div className={classes.text}>Node and Express</div>
                     </Paper>
                 </Grid>
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>
                     <i className="fas fa-database fa-5x"></i>
-                    <div className="language">MySQL and Mongo</div>
+                    <div className={classes.text}>MySQL and Mongo</div>
                     </Paper>
                 </Grid>
             </Grid>
