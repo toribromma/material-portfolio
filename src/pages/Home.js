@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: theme.spacing(2),
-    color: theme.palette.text.primary
+    color: theme.palette.text.primary,
+    lineHeight: 1.5
   },
   avatar: {
     width: "200px",
@@ -44,8 +45,14 @@ function Home() {
               A nerdy dude with a passion, TRULY, a renaissance man!
             </h2>
             <p>
-              I enjoy the outdoors, picnicing, playing guitar, and most of all: coding!
+              I enjoy the outdoors, basketball, playing guitar, and most of all: <b><i>coding</i></b>!
             </p>
+            <p>
+              <b>Full Stack Web Developer</b> with a background in Political Science and Social Services. Dedicated to
+              developing new skills, honing current skills, producing effective, creative app ideas, and solving complicated
+              problems. Known for being clever, having sound ideas and follow through.
+            </p>
+            <p>Focused on <b>Object-Oriented Programming</b> and <b>agile development</b>. My goals are to become more advanced in React and become better at whiteboarding.</p>
             <Button target="_blank" href="mailto:toribromma@gmail.com">
               Email me
             </Button>
@@ -57,10 +64,12 @@ function Home() {
             <h4>Contact Info:</h4>
             <ul>
               <li>
-                Tele: 1 (714)-702-0401
+              <a href="tel:+17147020401">Call me for more info</a>
               </li>
-              <li>
-                
+              <li> Please check out my<span> </span>
+                <a target="_blank" href="https://drive.google.com/file/d/1Q0jXdWVesqziTQG1LJKpO_Vp0rj5ddrC/view?usp=sharing">
+                  Resume
+                </a>
               </li>
             </ul>
             </Paper>

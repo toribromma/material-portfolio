@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import {Paper, Grid} from "@material-ui/core"
-var ReactRotatingText = require('react-rotating-text');
+// var ReactRotatingText = require('react-rotating-text');
 
 const useStyles = makeStyles((theme) => ({
     header: {
@@ -32,12 +32,9 @@ function Header() {
                   </Grid>
                   <Grid item xs={6}>
                   <Paper className={classes.paper}>
-                  <h1> 
-                  <ReactRotatingText 
-              color={"black"}
-              items={['Tori Bromma', 'Full-Stack Web Developer', 'Welcome to my Page']} 
+                  <h1
               className={classes.heading}
-              /></h1>
+              >Tori Bromma</h1>
                             </Paper>
                     </Grid>
                     <Grid item xs={3}>
