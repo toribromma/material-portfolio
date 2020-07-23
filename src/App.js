@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Breadcrumb from "./components/Breadcrumb";
 import Header from "./components/Header";
 import {Container, Box} from "@material-ui/core/"
-import { Hashrouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Projects from "./pages/Projects";
 import Detail from "./pages/Detail";
 import Skills from "./pages/Skills";
@@ -15,7 +15,7 @@ function App() {
   return (
       <Router 
       forceRefresh={true}
-      basename="/material-portfolio">
+      basename={process.env.PUBLIC_URL}>
         <Container maxWidth="lg">
           <Header/>
           <Box component="span">
@@ -25,13 +25,13 @@ function App() {
           <Route exact path="/">
                 <Home/>
             </Route>
-            <Route exact path="/skills">
+            <Route exact path="/skills/">
                 <Skills />
               </Route>
               <Route exact path="/projects/:id">
                 <Detail />
               </Route>
-              <Route exact path="/projects">
+              <Route exact path="/projects/">
                 <Projects />
               </Route>
             </Switch>
