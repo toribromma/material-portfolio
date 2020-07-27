@@ -59,7 +59,7 @@ function Home() {
             <p>
               <b>Full Stack (MERN) Web Developer</b> with a background in Political Science and Social Services. Dedicated to
               developing best practices, honing current coding skills, producing effective, creative app ideas, and solving complicated
-              problems. Known for being hardworking, having sound ideas and following through with projects.
+              problems. Known for being hardworking, adaptable, and a great communicator.
             </p>
             <p>Focused on <b>Object-Oriented Programming</b> and <b>agile development</b>. My goals are to become more advanced in React and become better at whiteboarding.</p>
             <Button className={classes.button} target="_blank" href="mailto:toribromma@gmail.com">
