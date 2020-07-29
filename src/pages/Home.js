@@ -11,16 +11,26 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(4),
     color: theme.palette.text.primary,
-    lineHeight: 1.5
+    lineHeight: 2,
+  },
+  paper2: {
+    padding: theme.spacing(4),
+    color: "white",
+    lineHeight: 1.5,
+    background: "linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%)",
+    boxShadow: '0 5px 10px 4px rgba(255, 105, 135, .3)'
   },
   avatar: {
     width: "200px",
-    height: "200px"
+    height: "200px",
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto"
   },
   button: {
-    background: 'linear-gradient(45deg, #9AAB89 30%, #FF8E53 90%)',
+    background: 'linear-gradient(45deg, #22c1c3 30%, #fdbb2d 90%)',
     borderRadius: 3,
     border: 0,
     color: 'white',
@@ -43,12 +53,12 @@ function Home() {
       direction="row"
       justify="center"
       alignItems="center"
+      spacing={2}
       >
         <Grid item xs={12} sm={9}>
           <Paper 
           className={classes.paper}
-          elevation={1}
-          spacing={4}
+          elevation={0}
           >
             <h2>
               <i>Welcome to my Page!</i>
@@ -68,7 +78,7 @@ function Home() {
           </Paper>
         </Grid>
         <Grid item xs={12} sm={3}>
-          <Paper elevation={1} className={classes.paper}>
+          <Paper elevation={1} className={classes.paper2}>
             <Avatar className={classes.avatar} src={profile}/>
             <h4>Contact Info:</h4>
             <ul>
