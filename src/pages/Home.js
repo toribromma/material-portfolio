@@ -14,10 +14,11 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(4),
     color: theme.palette.text.primary,
     lineHeight: 2,
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)'
   },
   paper2: {
     padding: theme.spacing(4),
-    color: "white",
+    color: "black",
     lineHeight: 1.5,
     background: "linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%)",
     boxShadow: '0 5px 10px 4px rgba(255, 105, 135, .3)'
@@ -39,10 +40,10 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
   },
   links:{
-    textDecoration: "none",
-    color: "#ffec80",
+    // textDecoration: "none",
+    color: "black",
     "&:hover": {
-      color: "black"
+      color: "white"
     },
   }
 }));

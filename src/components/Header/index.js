@@ -7,7 +7,6 @@ const useStyles = makeStyles((theme) => ({
     header: {
         textAlign: "center",
         marginTop: "100px",
-        // backgroundColor: "black"
     },
     heading: {
       fontFamily: "Pacifico",
@@ -19,9 +18,10 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
       backgroundColor: "#D0D4BA",
-      borderRadius: "6px",
+      borderRadius: "15px",
       padding: 18,
-      background: "radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)"
+      background: "radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)",
+      boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)'
     }
 
   }));
@@ -36,8 +36,8 @@ function Header() {
                   <Grid item xs={12}>
                   <Paper elevation={0} className={classes.paper}>
                   <h1
-              className={classes.heading}
-              >Tori Bromma</h1>
+                className={classes.heading}
+                >Tori Bromma</h1>
                             </Paper>
                     </Grid>
               </Grid>
