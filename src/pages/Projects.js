@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import InfoIcon from '@material-ui/icons/Info';
 import tileData from '../components/Project/tileData';
 import {Paper} from "@material-ui/core"
+import image from "../images/cool-background.svg"
 
 
 const useStyles = makeStyles((theme) => ({
@@ -11,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
       display: 'flex',
       alignItems: "center",
       justifyContent: 'center',
-      backgroundColor: theme.palette.background.paper,
       // minHeight: "100vh"
     },
     section: {
@@ -24,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
     },
     card: {
       position: "relative",
-      width: "320px",
-      height: "320px",
+      width: "345px",
+      height: "220px",
       margin: 20,
       transformStyle: "preserve-3d",
       perspective: "1000",
@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
       transformStyle: "preserve-3d",
       transform: "1s ease",
       // border: "1px solid gray",
-      boxShadow: "0 0 25px gray",
+      boxShadow: "0 0 25px white",
       borderRadius: "10px"
     },
     imgBx: {
@@ -58,7 +58,8 @@ const useStyles = makeStyles((theme) => ({
       left: 0,
       width: "100%",
       height: "100%",
-      objectFit: "cover"
+      objectFit: "cover",
+      borderRadius: 5
     },
     contentBx: {
       position: "absolute",
@@ -66,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
       left: 0,
       width: "100%",
       height: "100%",
-      background: "black",
+      background: "antiqueblue",
       backfaceVisibility: "hidden",
       display: "flex",
       justifyContent: "center",
@@ -77,37 +78,26 @@ const useStyles = makeStyles((theme) => ({
     box2: {
       transformStyle: "preserve-3d",
       padding: 20,
-      background: "linear-gradient(45deg,#D0D4BA,#B8A082)",
+      background: "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)",
       transform: "translateZ(100px)",
     },
+    // background1: {
+    //   backgroundImage: `url(${image})`,
+    //   // background: "linear-gradient(45deg, rgba(131,58,180,1) 9%, rgba(177,47,122,1) 21%, rgba(194,43,101,1) 35%, rgba(253,29,29,1) 56%, rgba(252,176,69,1) 83%)",
+    //   backgroundRepeat: "no-repeat",
+    //   backgroundSize: "cover",
+    //   padding: theme.spacing(1),
+    // }
   }));
 
   
 function Projects() {
     const classes = useStyles();
     return (     
-        <Paper outline={1}>
-             {/* <div className={classes.root}> */}
-                {/* <GridList cellHeight={600} spacing={1} cols={2} className={classes.gridList}> */}
-                    {/* <GridListTile key="Subheader" cols={1} rows={1} style={{ height: 'auto' }}>
-                    <ListSubheader component="div">Projects</ListSubheader>
-                    </GridListTile> */}
-                    {tileData.map((tile) => (
-                    // <GridListTile className={classes.tile} key={tile.img}>
-                    //     <img src={tile.img} alt={tile.title} className={classes.img} />
-                    //     <GridListTileBar
-                    //     className={classes.bar}
-                    //     title={tile.title}
-                    //     subtitle={<span>{tile.description}</span>}
-                    //     actionIcon={
-                    //     <Link to={"/projects/" + tile._id} aria-label={`info about ${tile.title}`} className={classes.icon}>
-                    //     <InfoIcon />
-                    //     </Link>
-                    //     }
-                    //     />
-                    // </GridListTile>
-                    <div className={classes.root}>
+        <Paper outline={0} elevation={0} className={classes.background1}>
+                  <div className={classes.root}>
                       <div className={classes.section}>
+                    {tileData.map((tile) => (
                         <div className={classes.card}>
                           <div className={classes.box}>
                             <div className={classes.imgBx}>
@@ -124,13 +114,11 @@ function Projects() {
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
                     ))}
-                 {/* </GridList> */}
-    </Paper>
+                    </div>
+                      </div>
 
-        // </div>
+    </Paper>
     );
 }
 

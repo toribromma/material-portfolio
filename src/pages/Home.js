@@ -38,6 +38,13 @@ const useStyles = makeStyles((theme) => ({
     padding: '0 20px',
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
   },
+  links:{
+    textDecoration: "none",
+    color: "#ffec80",
+    "&:hover": {
+      color: "black"
+    },
+  }
 }));
 
 
@@ -58,7 +65,7 @@ function Home() {
         <Grid item xs={12} sm={9}>
           <Paper 
           className={classes.paper}
-          elevation={0}
+          elevation={1}
           >
             <h2>
               <i>Welcome to my Page!</i>
@@ -83,11 +90,11 @@ function Home() {
             <h4>Contact Info:</h4>
             <ul>
               <li>
-              <a href="tel:+17147020401">Call me for more info</a>
+              <a className={classes.links} href="tel:+17147020401"><b>Call me for more info</b></a>
               </li>
-              <li> Please check out my<span> </span>
-                <a target="_blank" href="https://drive.google.com/file/d/1Q0jXdWVesqziTQG1LJKpO_Vp0rj5ddrC/view?usp=sharing">
-                  Resume
+              <li> Please check out my<span></span>
+                <a className={classes.links} target="_blank" href="https://drive.google.com/file/d/1Q0jXdWVesqziTQG1LJKpO_Vp0rj5ddrC/view?usp=sharing">
+                  <b> Resume</b>
                 </a>
               </li>
             </ul>
