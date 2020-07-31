@@ -20,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
     paper: {
       // borderRadius: "15px",
       padding: 18,
-      border: "2px black solid",
-      boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)'
+      borderBottom: "2px black solid",
+      boxShadow: '0 3px 0px 0px rgba(255, 105, 135, .3)'
     }
 
   }));
