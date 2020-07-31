@@ -63,7 +63,7 @@ function Home() {
       alignItems="center"
       spacing={2}
       >
-        <Grid item xs={12} sm={9}>
+        <Grid item xs={12} sm={12} xl={9}>
           <Paper 
           className={classes.paper}
           elevation={1}
@@ -85,7 +85,7 @@ function Home() {
             </Button>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={3}>
+        <Grid item xs={12} sm={12} xl={3}>
           <Paper elevation={1} className={classes.paper2}>
             <Avatar className={classes.avatar} src={profile}/>
             <h4>Contact Info:</h4>

@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import {Paper, Grid} from "@material-ui/core"
 // var ReactRotatingText = require('react-rotating-text');
+import image from "../../images/trianglify-lowres.png"
 
 const useStyles = makeStyles((theme) => ({
     header: {
@@ -19,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     paper: {
       // borderRadius: "15px",
       padding: 18,
-      background: "radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)",
+      border: "2px black solid",
       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)'
     }
 

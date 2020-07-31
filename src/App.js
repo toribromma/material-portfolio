@@ -15,7 +15,7 @@ function App() {
   return (
       <Router 
       basename="/material-portfolio">
-        <Container maxWidth="lg">
+        <Container maxWidth="xl">
           <Header/>
           <Box component="span">
           <Breadcrumb/>
