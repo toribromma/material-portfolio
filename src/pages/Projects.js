@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: 'center',
       flexWrap: "wrap",
       transformStyle: "preserve-3d",
-      width: "100%"
+      width: "100%",
+      padding: 50
     },
     card: {
       position: "relative",
@@ -81,13 +82,6 @@ const useStyles = makeStyles((theme) => ({
       background: "radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)",
       transform: "translateZ(100px)",
     },
-    // background1: {
-    //   backgroundImage: `url(${image})`,
-    //   // background: "linear-gradient(45deg, rgba(131,58,180,1) 9%, rgba(177,47,122,1) 21%, rgba(194,43,101,1) 35%, rgba(253,29,29,1) 56%, rgba(252,176,69,1) 83%)",
-    //   backgroundRepeat: "no-repeat",
-    //   backgroundSize: "cover",
-    //   padding: theme.spacing(1),
-    // }
   }));
 
   

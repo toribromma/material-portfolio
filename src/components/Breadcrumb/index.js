@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
         background: " linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(154,190,113,1) 53%, rgba(253,187,45,1) 87%)",
         overflow: "auto",
         whiteSpace: "nowrap",
-        borderRadius: 10,
+        // borderRadius: 10,
         boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
     },
     link: {
