@@ -9,23 +9,26 @@ import Button from "@material-ui/core/Button";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    margin: "auto",
   },
   paper: {
     padding: theme.spacing(4),
     color: theme.palette.text.primary,
     lineHeight: 2,
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)'
+    boxShadow: '0 3px 5px 2px black',
+    borderRadius: 20
   },
   paper2: {
     padding: theme.spacing(4),
     color: "black",
     lineHeight: 1.5,
     background: "linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%)",
-    boxShadow: '0 5px 10px 4px rgba(255, 105, 135, .3)'
+    boxShadow: '0 3px 5px 2px black',
+    borderRadius: 20
   },
   avatar: {
-    width: "200px",
-    height: "200px",
+    width: "100px",
+    height: "100px",
     display: "block",
     marginLeft: "auto",
     marginRight: "auto"

@@ -1,6 +1,7 @@
 import image from "../../images/airbnb3.png";
 import image2 from "../../images/societe.png";
 import image3 from "../../images/wmp.png";
+import image4 from "../../images/overtime.png";
 
 const tileData = [
     {
@@ -29,6 +30,15 @@ const tileData = [
         technologies: "HTML, CSS, UIKit, JS, and Google Calendar API",
         githubLink: "https://github.com/hollyisaredhead/Weekly-meal-planner",
         deployedLink: "https://hollyisaredhead.github.io/Weekly-meal-planner/"
+    },
+    {
+        img: image4,
+        title: "Overtime Calc",
+        _id: "4",
+        description: "Simple Overtime hours calculator",
+        technologies: "React.js",
+        githubLink: "https://github.com/toribromma/overtimeCalculator",
+        deployedLink: "https://toribromma.github.io/overtimeCalculator/"
     },
     
     

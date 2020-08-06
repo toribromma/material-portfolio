@@ -14,14 +14,16 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 50,
       letterSpacing: "8px",
       lineHeight: "60px",
-      color: "black"
+      background: "linear-gradient(45deg, #22c1c3 30%, #fdbb2d 90%)",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent"
       
     },
     paper: {
       // borderRadius: "15px",
       padding: 18,
-      borderBottom: "2px black solid",
-      boxShadow: '0 3px 0px 0px rgba(255, 105, 135, .3)'
+      // borderBottom: "2px black solid",
+      // boxShadow: '0 3px 0px 0px #22c1c3'
     }
 
   }));

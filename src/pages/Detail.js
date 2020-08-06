@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
         maxHeight: '100%',
     },
     button: {
-        background: 'linear-gradient(45deg, #9AAB89 30%, #FF8E53 90%)',
+        background: 'linear-gradient(45deg, #22c1c3 30%, #fdbb2d 90%)',
         borderRadius: 3,
         border: 0,
         color: 'white',
