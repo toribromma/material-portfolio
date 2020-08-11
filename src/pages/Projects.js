@@ -28,7 +28,7 @@ function Projects() {
       alignItems="center"
       spacing={2}>
     {tileData.map((tile) => (
-    <Grid item xs={12} sm={12} md={4} xl={4}>
+    <Grid item xs={12} sm={12} md={3} xl={3}>
     <Card raised className={classes.root}>
     <CardActionArea>
       <CardMedia
