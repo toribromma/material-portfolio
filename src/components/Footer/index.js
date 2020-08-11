@@ -7,8 +7,8 @@ import Button from "@material-ui/core/Button"
 const useStyles = makeStyles((theme) => ({
     footer: {
         textAlign: "center",
-        marginTop: "30px",
-        borderTop: "2px solid black"
+        marginTop: "50px",
+        // borderTop: "2px solid black"
     }
 
   }));

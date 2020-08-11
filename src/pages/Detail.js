@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -54,13 +55,13 @@ return (
         spacing={4}
         alignItems="center">
             <Grid item xs={12}>
-            <Paper elevation={0} className={classes.paper}><h2>{project.title}</h2></Paper> 
+            <Typography variant="h5" component="h2" elevation={0} className={classes.paper}><h2>{project.title}</h2></Typography> 
             </Grid>
             <Grid item xs={12}>
-            <Paper elevation={0} className={classes.paper}><h5>{project.description}</h5></Paper>
-            <Paper elevation={0} className={classes.paper}><b>{project.technologies}</b></Paper>
+            <Typography variant="body2" color="textPrimary" component="p" className={classes.paper}><h5>{project.description}</h5></Typography>
+            <Typography variant="body2" color="textPrimary" component="p" className={classes.paper}><b>{project.technologies}</b></Typography>
             </Grid>
-            <Paper elevation={3} className={classes.paper}>
+            <Paper elevation={10} className={classes.paper}>
                 <img className={classes.img} src={project.img}/>
                 <Paper elevation={0} className={classes.paper}><Button component={"button"} className={classes.button} target="_blank" href={project.githubLink}>Github</Button></Paper>
             <Paper elevation={0} className={classes.paper}><Button className={classes.button} target="_blank" href={project.deployedLink}>Deployed</Button></Paper>

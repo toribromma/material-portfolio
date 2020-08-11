@@ -7,7 +7,7 @@ import image from "../../images/trianglify-lowres.png"
 const useStyles = makeStyles((theme) => ({
     header: {
         textAlign: "center",
-        // marginTop: "100px",
+
     },
     heading: {
       fontFamily: "Pacifico",
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
       lineHeight: "60px",
       background: "linear-gradient(45deg, #22c1c3 30%, #fdbb2d 90%)",
       WebkitBackgroundClip: "text",
-      WebkitTextFillColor: "transparent"
+      WebkitTextFillColor: "transparent",
       
     },
     paper: {

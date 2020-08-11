@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import Detail from "./pages/Detail";
 import Skills from "./pages/Skills";
 import Footer from "./components/Footer"
+import AppBr from "./components/AppBar"
 
 function App() {
 
@@ -16,9 +17,10 @@ function App() {
       <Router 
       basename="/material-portfolio">
         <Container maxWidth="xl">
+          <AppBr/>
           <Header/>
           <Box component="span">
-          <Breadcrumb/>
+          {/* <Breadcrumb/> */}
           </Box>
           <Switch>  
           <Route exact path="/">

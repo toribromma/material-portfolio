@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.primary,
     lineHeight: 2,
     boxShadow: '0 3px 5px 2px black',
-    borderRadius: 20
+    // borderRadius: 20
   },
   paper2: {
     padding: theme.spacing(4),
@@ -24,11 +24,11 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: 1.5,
     background: "linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%)",
     boxShadow: '0 3px 5px 2px black',
-    borderRadius: 20
+    // borderRadius: 20
   },
   avatar: {
-    width: "100px",
-    height: "100px",
+    width: "200px",
+    height: "200px",
     display: "block",
     marginLeft: "auto",
     marginRight: "auto"
@@ -69,7 +69,7 @@ function Home() {
         <Grid item xs={12} sm={12} md={9} xl={9}>
           <Paper 
           className={classes.paper}
-          elevation={1}
+          elevation={0}
           >
             <h2>
               <i>Welcome to my Page!</i>
@@ -89,7 +89,7 @@ function Home() {
           </Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={3} xl={3}>
-          <Paper elevation={1} className={classes.paper2}>
+          <Paper elevation={0} className={classes.paper2}>
             <Avatar className={classes.avatar} src={profile}/>
             <h4>Contact Info:</h4>
             <ul>
