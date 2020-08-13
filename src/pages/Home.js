@@ -15,16 +15,21 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(4),
     color: theme.palette.text.primary,
     lineHeight: 2,
-    boxShadow: '0 3px 5px 2px black',
+    // boxShadow: '0 3px 5px 2px black',
+    textAlign:"center",
     // borderRadius: 20
+    width: "70%",
+    margin: "auto"
+    
   },
   paper2: {
+    fontFamily: "merriweather",
     padding: theme.spacing(4),
     color: "black",
     lineHeight: 1.5,
     background: "linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%)",
-    boxShadow: '0 3px 5px 2px black',
-    // borderRadius: 20
+    textAlign:"center",
+    marginTop: 100
   },
   avatar: {
     width: "200px",
@@ -34,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "auto"
   },
   button: {
+    marginTop: 40,
     background: 'linear-gradient(45deg, #22c1c3 30%, #fdbb2d 90%)',
     borderRadius: 3,
     border: 0,
@@ -43,7 +49,10 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
   },
   links:{
-    // textDecoration: "none",
+    textDecoration: "none",
+    listStyle: "none",
+    padding: 5,
+    lineHeight: 1.5,
     color: "black",
     "&:hover": {
       color: "white"
@@ -66,13 +75,13 @@ function Home() {
       alignItems="center"
       spacing={2}
       >
-        <Grid item xs={12} sm={12} md={9} xl={9}>
+        <Grid item xs={12} sm={12} md={12} xl={12}>
           <Paper 
           className={classes.paper}
           elevation={0}
           >
             <h2>
-              <i>Welcome to my Page!</i>
+              {/* <i>Welcome to my Page!</i> */}
             </h2>
             <p>
               I enjoy the outdoors, basketball, playing guitar, and most of all: <b><i>coding</i></b>!
@@ -88,11 +97,11 @@ function Home() {
             </Button>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={12} md={3} xl={3}>
+        <Grid item xs={12} sm={12} md={6} xl={6}>
           <Paper elevation={0} className={classes.paper2}>
             <Avatar className={classes.avatar} src={profile}/>
-            <h4>Contact Info:</h4>
-            <ul>
+            <h2>Contact Info</h2>
+            <ul style={{listStyle:"none"}}> 
               <li>
               <a className={classes.links} href="tel:+17147020401"><b>Call me for more info</b></a>
               </li>

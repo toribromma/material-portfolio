@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
       background: "linear-gradient(45deg, #22c1c3 30%, #fdbb2d 90%)",
       WebkitBackgroundClip: "text",
       WebkitTextFillColor: "transparent",
+      margin: 25
       
     },
     paper: {

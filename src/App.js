@@ -9,6 +9,7 @@ import Detail from "./pages/Detail";
 import Skills from "./pages/Skills";
 import Footer from "./components/Footer"
 import AppBr from "./components/AppBar"
+import Photos from "./pages/Photos"
 
 function App() {
 
@@ -34,6 +35,9 @@ function App() {
               </Route>
               <Route exact path="/projects">
                 <Projects />
+              </Route>
+              <Route exact path="/photos">
+                <Photos />
               </Route>
             </Switch>
           <Footer/>

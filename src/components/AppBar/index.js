@@ -3,6 +3,9 @@ import {AppBar, Toolbar, Typography, IconButton, Menu} from "@material-ui/core"
 import MenuIcon from "@material-ui/icons/Menu/"
 import { makeStyles } from '@material-ui/core/styles';
 import {Link} from "react-router-dom";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import Button from "@material-ui/core/Button"
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -13,7 +16,10 @@ const useStyles = makeStyles((theme) => ({
       },
       title: {
         flexGrow: 1,
-        fontFamily: "Pacifico"
+        fontFamily: "Pacifico",
+        background: "linear-gradient(45deg, #22c1c3 30%, #fdbb2d 90%)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
       },
       offset: theme.mixins.toolbar,
       link: {
@@ -27,9 +33,11 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         letterSpacing: 2,
       "&:hover": {
-        background: "linear-gradient(45deg, #22c1c3 30%, #fdbb2d 90%)",
-        color: "white",
-        
+        // background: "linear-gradient(45deg, #22c1c3 30%, #fdbb2d 90%)",
+        color: "gray",
+      },
+      link2: {
+        backgroundColor: "linear-gradient(45deg, #22c1c3 30%, #fdbb2d 90%)",
       }
     }
       
@@ -65,10 +73,13 @@ function AppBr() {
                     <Link className={classes.link} to="/" onClick={handleClose}>About</Link>
                     <Link className={classes.link} to="/projects"  onClick={handleClose}>Projects</Link>
                     <Link className={classes.link} to="/skills" onClick={handleClose}>Skills</Link>
+                    <Link className={classes.link} to="/photos" onClick={handleClose}>Photos</Link>
                 </Menu>
                 <Typography variant="h6" className={classes.title}>
                 TB
                 </Typography>
+                <Button href="https://github.com/toribromma" target="_blank"><GitHubIcon/></Button>
+                <Button href="http://linkedin.com/in/toribromma" target="_blank"><LinkedInIcon/></Button>
             </Toolbar>
             </AppBar>
             <div className={classes.offset} />
