@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
   media: {
     height: 180,
   },
+  container: {
+    marginTop: 100
+  }
   }));
 
   
@@ -22,10 +25,12 @@ function Projects() {
     return (   
 
     <Grid
-      container
+      className={classes.container}
+      container xs
       direction="row"
-      justify="center"
+      justify="flex-start"
       alignItems="center"
+      // alignContent="stretch"
       spacing={2}>
     {tileData.map((tile) => (
     <Grid item xs={12} sm={12} md={3} xl={3}>

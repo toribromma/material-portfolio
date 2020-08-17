@@ -61,7 +61,7 @@ function AppBr() {
         <AppBar elevation={0} color="transparent" position="fixed">
             <Toolbar>
                 <IconButton aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                <MenuIcon />
+                <MenuIcon style={{color:"#22c1c3"}} />
                 </IconButton>
                 <Menu
                     id="simple-menu"
@@ -78,8 +78,8 @@ function AppBr() {
                 <Typography variant="h6" className={classes.title}>
                 TB
                 </Typography>
-                <Button href="https://github.com/toribromma" target="_blank"><GitHubIcon/></Button>
-                <Button href="http://linkedin.com/in/toribromma" target="_blank"><LinkedInIcon/></Button>
+                <Button href="https://github.com/toribromma" target="_blank"><GitHubIcon style={{color:"#22c1c3"}}/></Button>
+                <Button href="http://linkedin.com/in/toribromma" target="_blank"><LinkedInIcon style={{color:"#22c1c3"}}/></Button>
             </Toolbar>
             </AppBar>
             <div className={classes.offset} />

@@ -7,6 +7,7 @@ import image from "../../images/trianglify-lowres.png"
 const useStyles = makeStyles((theme) => ({
     header: {
         textAlign: "center",
+        // margin: 80
 
     },
     heading: {
@@ -17,14 +18,12 @@ const useStyles = makeStyles((theme) => ({
       background: "linear-gradient(45deg, #22c1c3 30%, #fdbb2d 90%)",
       WebkitBackgroundClip: "text",
       WebkitTextFillColor: "transparent",
-      margin: 25
+      // margin: 25
       
     },
     paper: {
-      // borderRadius: "15px",
       padding: 18,
-      // borderBottom: "2px black solid",
-      // boxShadow: '0 3px 0px 0px #22c1c3'
+
     }
 
   }));

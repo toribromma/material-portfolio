@@ -23,7 +23,7 @@ function Photos() {
   };
 
   return (
-    <div>
+    <div style={{marginTop: 100}}>
       <Gallery photos={photos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (

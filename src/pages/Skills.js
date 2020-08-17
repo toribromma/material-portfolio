@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
       margin: "auto",
       width: "50%",
+      marginTop: 100
       
     },
     paper: {

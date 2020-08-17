@@ -19,7 +19,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign:"center",
     // borderRadius: 20
     width: "70%",
-    margin: "auto"
+    margin: "auto",
+    // marginTop: -115,
     
   },
   paper2: {
