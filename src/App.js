@@ -10,6 +10,7 @@ import Skills from "./pages/Skills";
 import Footer from "./components/Footer"
 import AppBr from "./components/AppBar"
 import Photos from "./pages/Photos"
+import SimpleReactLightbox from "simple-react-lightbox";
 
 function App() {
 
@@ -34,10 +35,12 @@ function App() {
                 <Detail />
               </Route>
               <Route exact path="/projects">
-                <Projects />
+                  <Projects />
               </Route>
               <Route exact path="/photos">
+              <SimpleReactLightbox>
                 <Photos />
+              </SimpleReactLightbox>
               </Route>
             </Switch>
           <Footer/>

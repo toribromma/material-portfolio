@@ -12,10 +12,12 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-images": "^1.1.7",
+    "react-lazyload": "^3.0.0",
     "react-photo-gallery": "^8.0.0",
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^3.4.3",
+    "simple-react-lightbox": "^3.3.4-1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -78,8 +78,8 @@ function AppBr() {
                 <Typography variant="h6" className={classes.title}>
                 TB
                 </Typography>
-                <Button href="https://github.com/toribromma" target="_blank"><GitHubIcon style={{color:"#22c1c3"}}/></Button>
-                <Button href="http://linkedin.com/in/toribromma" target="_blank"><LinkedInIcon style={{color:"#22c1c3"}}/></Button>
+                <Button rel="noopener" href="https://github.com/toribromma" target="_blank"><GitHubIcon style={{color:"#22c1c3"}}/></Button>
+                <Button rel="noopener" href="http://linkedin.com/in/toribromma" target="_blank"><LinkedInIcon style={{color:"#22c1c3"}}/></Button>
             </Toolbar>
             </AppBar>
             <div className={classes.offset} />

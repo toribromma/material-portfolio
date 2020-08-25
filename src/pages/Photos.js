@@ -1,45 +1,27 @@
 import React, { useState, useCallback, useEffect } from "react";
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
-// import photos from "../photos/photos.js";
-
+import { SRLWrapper } from "simple-react-lightbox";
+import LazyLoad from 'react-lazyload';
+import Grid from "@material-ui/core/Grid";
+import Placeholder from "../components/Placeholder"
 
 const regPhotos = require.context ( '../photos/photos', true, /\.jpg$/ )
 const photos = regPhotos.keys().map(path =>({path, src: regPhotos(path), width: 375, height: 300}))
 
-
 function Photos() {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
-
-  const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  }, []);
-
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-  };
 
   return (
-    <div style={{marginTop: 100}}>
-      <Gallery photos={photos} onClick={openLightbox} />
-      <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map(x => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title
-              }))}
-            />
-          </Modal>
-        ) : null}
-      </ModalGateway>
-    </div>
+    
+    <SRLWrapper>
+      <Grid container spacing={3}>
+      {photos.map((photo, index) =>  (
+        <Grid item xs={12} md={4}>
+          <LazyLoad offset={-100} debounce placeholder={<Placeholder/>} height={300}>
+            <img style={{height:photo.height, width: photo.width, cursor: "pointer"}} src={photo.src} />
+          </LazyLoad>
+        </Grid>
+      ))}
+      </Grid>
+      </SRLWrapper>
   );
 }
 
