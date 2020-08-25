@@ -5,14 +5,14 @@ import Grid from "@material-ui/core/Grid";
 import Placeholder from "../components/Placeholder"
 
 const regPhotos = require.context ( '../photos/photos', true, /\.jpg$/ )
-const photos = regPhotos.keys().map(path =>({path, src: regPhotos(path), width: 365, height: 300}))
+const photos = regPhotos.keys().map(path =>({path, src: regPhotos(path), width: 325, height: 275}))
 
 function Photos() {
 
   return (
     
     <SRLWrapper>
-      <Grid container spacing={3}>
+      <Grid container spacing={1}>
       {photos.map((photo, index) =>  (
         <Grid item xs={12} md={4}>
           <LazyLoad offset={-100} debounce placeholder={<Placeholder/>} height={300}>
