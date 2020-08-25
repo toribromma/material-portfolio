@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/material-portfolio/static/css/main.5a42a4c7.chunk.css",
-    "main.js": "/material-portfolio/static/js/main.4a7c6279.chunk.js",
-    "main.js.map": "/material-portfolio/static/js/main.4a7c6279.chunk.js.map",
+    "main.css": "/material-portfolio/static/css/main.88ebef33.chunk.css",
+    "main.js": "/material-portfolio/static/js/main.e8cdfc65.chunk.js",
+    "main.js.map": "/material-portfolio/static/js/main.e8cdfc65.chunk.js.map",
     "runtime-main.js": "/material-portfolio/static/js/runtime-main.cd17476b.js",
     "runtime-main.js.map": "/material-portfolio/static/js/runtime-main.cd17476b.js.map",
-    "static/js/2.f00a25bc.chunk.js": "/material-portfolio/static/js/2.f00a25bc.chunk.js",
-    "static/js/2.f00a25bc.chunk.js.map": "/material-portfolio/static/js/2.f00a25bc.chunk.js.map",
+    "static/js/2.4ea14fa4.chunk.js": "/material-portfolio/static/js/2.4ea14fa4.chunk.js",
+    "static/js/2.4ea14fa4.chunk.js.map": "/material-portfolio/static/js/2.4ea14fa4.chunk.js.map",
     "index.html": "/material-portfolio/index.html",
-    "precache-manifest.e56da969274e77702e6d5a2ee0ab6a3b.js": "/material-portfolio/precache-manifest.e56da969274e77702e6d5a2ee0ab6a3b.js",
+    "precache-manifest.40f72782bc98317ae65effb2df2406ff.js": "/material-portfolio/precache-manifest.40f72782bc98317ae65effb2df2406ff.js",
     "service-worker.js": "/material-portfolio/service-worker.js",
-    "static/css/main.5a42a4c7.chunk.css.map": "/material-portfolio/static/css/main.5a42a4c7.chunk.css.map",
-    "static/js/2.f00a25bc.chunk.js.LICENSE.txt": "/material-portfolio/static/js/2.f00a25bc.chunk.js.LICENSE.txt",
+    "static/css/main.88ebef33.chunk.css.map": "/material-portfolio/static/css/main.88ebef33.chunk.css.map",
+    "static/js/2.4ea14fa4.chunk.js.LICENSE.txt": "/material-portfolio/static/js/2.4ea14fa4.chunk.js.LICENSE.txt",
     "static/media/DSC06234.jpg": "/material-portfolio/static/media/DSC06234.23fc0d75.jpg",
     "static/media/DSC06254.jpg": "/material-portfolio/static/media/DSC06254.48bc2201.jpg",
     "static/media/DSC06262.jpg": "/material-portfolio/static/media/DSC06262.26cb1923.jpg",
@@ -70,8 +70,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.cd17476b.js",
-    "static/js/2.f00a25bc.chunk.js",
-    "static/css/main.5a42a4c7.chunk.css",
-    "static/js/main.4a7c6279.chunk.js"
+    "static/js/2.4ea14fa4.chunk.js",
+    "static/css/main.88ebef33.chunk.css",
+    "static/js/main.e8cdfc65.chunk.js"
   ]
 }
